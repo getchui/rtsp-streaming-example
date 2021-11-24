@@ -1,0 +1,1 @@
+ffmpeg -rtsp_transport tcp -use_wallclock_as_timestamps 1 -i rtsp://localhost:$RTSP_PORT/$RTSP_PATH  -f hls -c copy -copyts -vsync 'vfr' -hls_time 15 -hls_list_size 500 -segment_time_metadata 1 -hls_flags 'append_list+delete_segments' -strftime 1 -strftime_mkdir 1 -hls_segment_filename recordings/$RTSP_PATH/%Y%m%d-%s.ts recordings/$RTSP_PATH/stream.m3u8
