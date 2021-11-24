@@ -14,7 +14,7 @@ Notes:
 
 1- If you're processing with a variable rate make sure to stream and record with the variable rate param -vfr
 
-2- If your camera is streaming in h264, you can switch the encoding from libx264 to copy, this will just copy the content vs transcode it resulting in improved performance. Leaving the param ensures your restreams and recorded files we'll work with browsers and most clients.
+2- If your camera is streaming in h264, you can switch the encoding from libx264 to copy, this will just copy the content vs transcode it resulting in improved performance. Leaving the param ensures your restreams and recorded files will work with browsers and most clients.
 
 3- On publish executes record.sh, which records and automatically builds hls lists.
 
